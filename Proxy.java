@@ -37,10 +37,5 @@ Mỗi khi server đóng, tất cả dữ liệu về những trang bị block ho
 điều này giúp Proxy có thể luôn duy trì, cập nhật và lưu trữ chúng.
 */
 public class Proxy implements Runnable {    //Tạo class Runnable vì Proxy là đối tượng được thực thi trên Thread
-<<<<<<< HEAD
 
-	bbbbbbbbb
-=======
-	aaaaaa
->>>>>>> refs/remotes/origin/master
 }

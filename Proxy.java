@@ -47,6 +47,23 @@ public class Proxy implements Runnable {    //Tạo class Runnable vì Proxy là
 
 	bbbbbbbbbbbbbbbbbbbbbbbbbbb
 
+	ddddddddddddddddddddddddddddddddddddd
+	ddddddddddddddddddddddddddddddddddddd
+	ddddddddddddddddddddddddddddddddddddd
+
+	ddddddddddddddddddddddddddddddddddddd
+	ddddddddddddddddddddddddddddddddddddd
+
+	ddddddddddddddddddddddddddddddddddddd
+	ddddddddddddddddddddddddddddddddddddd
+	ddddddddddddddddddddddddddddddddddddd
+	ddddddddddddddddddddddddddddddddddddd
+
+	ddddddddddddddddddddddddddddddddddddd
+	ddddddddddddddddddddddddddddddddddddd
+
+	ddddddddddddddddddddddddddddddddddddd
+
 
 	aaaaaaaaaaaaaaaaaaaa
 	aaaaaaaaaaaaaaaaaaaaa

@@ -37,5 +37,38 @@ Mỗi khi server đóng, tất cả dữ liệu về những trang bị block ho
 điều này giúp Proxy có thể luôn duy trì, cập nhật và lưu trữ chúng.
 */
 public class Proxy implements Runnable {    //Tạo class Runnable vì Proxy là đối tượng được thực thi trên Thread
-	
+	// Phương pháp chính cho chương trình
+	public static void main(String[] args) {
+	// Tạo một Proxy mẫu và bắt đầu lắng nghe những yêu cầu được kết nối đến.
+	Proxy myProxy = new Proxy(8888);
+	myProxy.listen();	
+    	}
+    
+   	private ServerSocket serverSocket; // Server Socket
+
+    	/**
+     	* Đặt cờ để báo hiệu cho hệ thống quản lý Proxy và Consolee
+     	**/
+    	private volatile boolean dangChay = true; // đang chạy
+
+
+	/**
+	* Cấu trúc dữ liệu cho việc tìm kiếm tuần tự liên tục của các mục nhớ cache.
+	* Khóa: URL của trang/hình ảnh được yêu cầu.
+	* Giá trị: File trong bộ nhớ liên kết với Khóa.
+	**/
+	static HashMap<String, File> boNhoCache; // bộ nhớ cache
+
+	/**
+	* Cấu trúc dữ liệu cho việc tìm kiếm tuần tự liên tục của các trang web Bị Chặn.
+	* Khóa: URL của trang/hình ảnh được yêu cầu.
+	* Giá trị: URL của trang/hình ảnh được yêu cầu.
+	**/
+	static HashMap<String, String> trangBiChan; // trang bị chặn
+
+	/**
+	* Mảng danh sách của các luồng đang chạy và xử lý yêu cầu.
+	* Danh sách này nhầm mục đích nối tất cả các luồng trong việc đóng Server.
+	**/
+	static ArrayList<Thread> luongDangChay; // luồng đang chạy
 }
